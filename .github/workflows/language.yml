@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Afficher un message
-        run: echo "L'utilisateur ${{githup.actor}} parle français"
+        run: echo "L'utilisateur ${{github.actor}} parle français"
 
       
   #second-job:
