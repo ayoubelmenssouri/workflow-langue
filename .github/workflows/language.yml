@@ -2,7 +2,7 @@ name: "workflow langue"
 on: 
   push: 
     branches : 
-      - lang
+      - "lang"
 jobs:
   fr-job:
     if : vars.LANG == 'FR'
