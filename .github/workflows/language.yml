@@ -5,7 +5,7 @@ on:
       - lang
 jobs:
   fr-job:
-    if : ${{lang == 'FR'}}
+    if : ${{vars.LANG == 'FR'}}
     runs-on: ubuntu-latest
     steps:
       - name: Afficher un message
@@ -13,7 +13,7 @@ jobs:
 
       
   second-job:
-    if : ${{lang != 'FR'}}
+    if : ${{vars.LANG != 'FR'}}
     runs-on: macos-latest
     steps:
       - name: Afficher un message
