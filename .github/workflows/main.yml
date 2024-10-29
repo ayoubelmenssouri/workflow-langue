@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Afficher un message
-        run: echo "user ${{github.actor}} parle fr"
+        run: echo "L'utilisateur ${{githup.actor}} parle français"
 
       
   second-job:
@@ -17,4 +17,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Afficher un message
-        run: echo "user ${{github.actor}} parle Eng"
+        run: echo "user ${{githup.actor}} speaks english"
