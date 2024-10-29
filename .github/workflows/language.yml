@@ -5,16 +5,16 @@ on:
       - lang
 jobs:
   fr-job:
-    if : ${{vars.LANG == 'FR'}}
+    if : vars.LANG == 'FR'
     runs-on: ubuntu-latest
     steps:
       - name: Afficher un message
         run: echo "L'utilisateur ${{githup.actor}} parle français"
 
       
-  second-job:
-    if : ${{vars.LANG != 'FR'}}
-    runs-on: macos-latest
-    steps:
-      - name: Afficher un message
-        run: echo "user ${{githup.actor}} speaks english"
+  #second-job:
+  #  if : ${{vars.LANG != 'FR'}}
+  #  runs-on: macos-latest
+  #  steps:
+  #    - name: Afficher un message
+  #      run: echo "user ${{githup.actor}} speaks english"
