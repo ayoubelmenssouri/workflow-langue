@@ -12,9 +12,9 @@ jobs:
         run: echo "L'utilisateur ${{github.actor}} parle français"
 
       
-  #second-job:
-  #  if : ${{vars.LANG != 'FR'}}
-  #  runs-on: macos-latest
-  #  steps:
-  #    - name: Afficher un message
-  #      run: echo "user ${{githup.actor}} speaks english"
+  2eme-job:
+    if : vars.LANG != 'FR'
+    runs-on: macos-latest
+    steps:
+      - name: Afficher un message
+        run: echo "user ${{github.actor}} speaks english1"
