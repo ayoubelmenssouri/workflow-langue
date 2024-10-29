@@ -1,0 +1,20 @@
+name: "mon premier workflow"
+on: 
+  push: 
+    branches : 
+      - lang
+jobs:
+  fr-job:
+    if : ${{LANG == 'FR'}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "user ${{github.actor}} parle fr"
+
+      
+  second-job:
+    if : ${{LANG != 'FR'}}
+    runs-on: macos-latest
+    steps:
+      - name: Afficher un message
+        run: echo "user ${{github.actor}} parle Eng"
