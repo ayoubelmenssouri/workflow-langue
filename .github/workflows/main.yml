@@ -1,4 +1,4 @@
-name: "mon premier workflow"
+name: "workflow langue"
 on: 
   push: 
     branches : 
